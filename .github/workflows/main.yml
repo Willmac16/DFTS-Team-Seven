@@ -9,8 +9,7 @@ jobs:
     - uses: actions/checkout@v3
     - name: Set up Python
       uses: actions/setup-python@v3
-    - run:
-      python3 -m pip install imp
+    - run: python3 -m pip install imp
     - uses: yaananth/run-notebook@v2
       env:
         RUNNER: ${{ toJson(runner) }}
