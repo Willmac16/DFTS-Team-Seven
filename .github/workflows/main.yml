@@ -20,7 +20,7 @@ jobs:
         notebook: "Project1/CDR.ipynb"
         params: "CDR.json"
         isReport: False
-        poll: True
+        poll: False
     - uses: actions/upload-artifact@v3
       if: always()
       with:
