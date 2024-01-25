@@ -18,6 +18,7 @@ jobs:
         GITHUB: ${{ toJson(github) }}
       with:
         notebook: "Project1/CDR.ipynb"
+        params: "CDR.json"
         isReport: False
         poll: True
     - uses: actions/upload-artifact@v3
