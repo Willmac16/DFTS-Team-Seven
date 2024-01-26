@@ -17,8 +17,7 @@ jobs:
         SECRETS: ${{ toJson(secrets) }}
         GITHUB: ${{ toJson(github) }}
       with:
-        notebook: "Project1/CDR.ipynb"
-        params: "CDR.json"
+        notebook: "Project1.ipynb"
         isReport: False
         poll: False
     - uses: actions/upload-artifact@v3
