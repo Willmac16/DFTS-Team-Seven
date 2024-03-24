@@ -3,7 +3,7 @@ name: Execute notebook
 on: [push, workflow_dispatch]
 
 jobs:
-  run:
+  notebook-1:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
@@ -27,7 +27,7 @@ jobs:
         path: ${{ RUNNER.temp }}/nb-runner
       env:
         RUNNER: ${{ toJson(runner) }}
-  run:
+  notebook-2:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
